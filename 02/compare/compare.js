@@ -85,3 +85,13 @@ console.log(`Logic || ${2<3 || 'Max' === 'max' || 4>30}`);
 
 
 
+console.log('Test');
+console.log('' != 0); 
+console.log('' !== 0);  
+
+console.log(false != '0');   
+console.log(false !== '0'); 
+
+console.log('sting number');
+console.log(2 != '2');   
+console.log(2 !== '2');  
