@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section.a{
+            /* height: 3500px; */
+            min-height: 100vh;
+            background-color: yellow;
+        }
+        section.b{
+            min-height: 100vh;
+            background-color: rgb(199, 122, 6);
+        }
+    </style>
+</head>
+<body>
+    <section class="a">
+        <form action="">
+            <h1>
+                Обмін валют
+            </h1>
+            <label for="currencyFrom">
+                Від валюти
+            </label>
+            <input type="number" id="currencyFrom">
+            <label for="currencyTo">
+                До валюти
+            </label>
+            <input type="number" id="currencyTo">
+            <button id="calculateValue" disabled>
+                Розрахувати
+            </button>
+        </form>
+        <h3>
+            Ви отримаєте <strong>0</strong>
+        </h3>
+    </section>
+    <section class="b">
+        Next section
+    </section>
+
+    <script src="curency.js"></script>
+</body>
+</html>

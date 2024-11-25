@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Forms element
+    </h1>
+    <form action="">
+        <h3>
+            Select size:
+        </h3>
+        <div>
+            <input 
+             type="radio"
+             name="size" 
+             id="s" 
+             value="small">
+             <label for="s">
+                Small
+             </label>
+        </div>
+        <div>
+            <input 
+             type="radio"
+             name="size" 
+             id="m" 
+             value="medium">
+             <label for="m">
+                Medium
+             </label>
+        </div>
+        <div>
+            <input 
+             type="radio"
+             name="size" 
+             id="large" 
+             value="large">
+             <label for="large">
+                Large
+             </label>
+        </div>
+        <p>
+            You select <strong class="sizeInfo"></strong>
+        </p>
+        <label for="accept">
+            Accept rules:
+        </label>
+        <input type="checkbox" name="accept" id="accept">
+    </form>
+    <h2>
+        Transport
+    </h2>
+    <div>
+        <label for="car">Car</label>
+        <input 
+        type="checkbox" 
+        name="Transport" 
+        id="car"
+        value="car">
+    </div>
+    <div>
+        <label for="Bicycle">Bicycle</label>
+        <input 
+        type="checkbox" 
+        name="Transport" 
+        id="Bicycle"
+        value="Bicycle">
+    </div>
+    <div>
+        <label for="Tram">Tram</label>
+        <input 
+        type="checkbox" 
+        name="Transport" 
+        id="Tram"
+        value="Tram">
+    </div>
+    <button class="showResult">
+        Show transport result
+    </button>
+    <div class="resultBox"></div>
+    <br><br><br>
+    <select name="skills" id="skills" >
+        <option value="">Select your skill</option>
+        <option value="HTML">My skill HTML</option>
+        <option value="CSS">My skill CSS</option>
+        <option value="JS">My skill JS</option>
+        <option value="GIT">My skill GIT</option>
+    </select>
+    <h4></h4>
+    <script src="script.js"></script>
+</body>
+</html>
