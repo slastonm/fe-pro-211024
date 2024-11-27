@@ -1,0 +1,17 @@
+:root{
+    --bg-color:red;
+    --text-color:yellow;
+    --title-color:white;
+}
+
+body{
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+h1{
+    color: var(--title-color);
+}
+body.dark{
+    color: white;
+    background-color: black;
+}
