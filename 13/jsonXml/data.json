@@ -1,0 +1,14 @@
+[
+  {
+    "userName": "Tom",
+    "userAge": 33,
+    "isStudy": false
+  },
+  {
+    "friends":["John", "Sara"],
+    "company":{
+        "companyName":"Microsoft",
+        "startWorkYear": 1990
+    }
+  } 
+]
