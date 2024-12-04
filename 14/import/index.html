@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <h3>
+                CommonJS (require)
+            </h3>
+            const myModule = require('./myModule');
+        </li>
+        <li>
+            <h3>
+                ES Modules (import)
+            </h3>
+            <h2>
+                import вимагає, щоб файл мав розширення .mjs або щоб у package.json було вказано "type": "module"
+            </h2>
+            import myModule from './myModule.js'; або import { myFunction } from './myModule.js
+        </li>
+    </ul>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
