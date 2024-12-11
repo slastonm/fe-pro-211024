@@ -9,20 +9,46 @@ function MyButton(props) {
         margin:'50px'
     }
     let buttonText = 'Hello user !!!! let value';
+
+    const callAlert = ()=>{
+        alert('Hello!');
+    }
+    const helloUser =(userName)=>{
+        alert(`Hello ${userName}`);
+    }
+    const eventInfo = (e)=>{
+        
+        e.preventDefault();
+        console.log(e);
+    }
+    let count = 0;
+    const counter =()=>{
+        count++;
+    }
     return (
         <div className='w-50 mx-auto'>
-            <button style={inlineStyle}>
-                {buttonText}
+            <button onClick={callAlert} style={inlineStyle}>
+                {buttonText} call alert
             </button>
-            <button className='btn btn-primary'>
-                Regular classname
+            <button onClick={()=>{
+                helloUser('Test!!!!')
+            }} className='btn btn-primary'>
+                hello username
             </button>
-            <button className={style.custom}>
-                Module css
+            <button onClick={(e)=>eventInfo(e)} className={style.custom}>
+                Module css Event
             </button>
             <button className={`${style.custom} m-3 p-5`}>
                 Module css
             </button>
+            <div>
+                <button onClick={counter} className="btn btn-danger">
+                    +1
+                </button>
+                <p>
+                    {count}
+                </p>
+            </div>
         </div>
     );
 }
